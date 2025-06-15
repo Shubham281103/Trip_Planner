@@ -133,14 +133,12 @@ def generate_itinerary_with_agent(place, start_date, end_date):
         task="text-generation",  # Or "text2text-generation"
         model="mistralai/Mixtral-8x7B-Instruct-v0.1",
         temperature=0.7,    # Adjust for creativity
-        huggingfacehub_api_token="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",
+        huggingfacehub_api_token="YOUR API KEY",
         provider="hf-inference"
     )
     """
-
-    # AIzaSyDkGhGeJ16JcQhj61S_GmaViCGe3616b1c
     llm = ChatGoogleGenerativeAI(
-        model="gemini-1.5-flash", google_api_key="AIzaSyAfjNZSp45DNapApxNQ0d-76IQDjpjEqTk")
+        model="gemini-1.5-flash", google_api_key="YOUR API KEY")
 
     tools = [search_places_tool, getweather_tool, suggest_itinerary_tool]
 
